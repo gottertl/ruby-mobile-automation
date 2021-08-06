@@ -1,11 +1,13 @@
 Given('that the user is on the Login screen') do
-    pending
+    @nav.navigate_to("FORMS")
+    @nav.navigate_to("LOGIN")
 end
 
-When('the user enters valid credentials {string} and {string}') do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
+When('the user enters valid credentials') do |table|
+    user = table.rows_hash
+    @login.login_with(user[:email], user[:password])
 end
 
-Then('should return a success message {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+Then('should return a success message {string}') do |success_message|
+    expect(@login.getToast.text).to eql success_message
 end

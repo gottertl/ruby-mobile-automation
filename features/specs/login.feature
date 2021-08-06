@@ -7,4 +7,4 @@ Feature: Login
         When the user enters valid credentials
             |email   |eu@papito.io|
             |password|qaninja|
-        Then should return a success message "Show! Suas credenciais são válidas." 
+        Then should return a success message "Show! Suas credenciais são validas." 
