@@ -1,0 +1,5 @@
+[caps]
+automationName = "UiAutomator2"
+platformName = "Android"
+deviceName = "Emulator"
+app = "/home/leandrogottert/Documentos/Dev/Ruby/ruby-mobile-automation/app/twp.apk"
