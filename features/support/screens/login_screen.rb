@@ -1,6 +1,6 @@
 
 
-class LoginScreen do
+class LoginScreen
 
     @email_field = "io.qaninja.android.twp:id/etEmail"
     @password_field = "io.qaninja.android.twp:id/etPassword"

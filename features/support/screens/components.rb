@@ -4,7 +4,7 @@ class Navigation
     @left_nav_id = 'io.qaninja.android.twp:id/navView'
 
     def start()
-        find_element("//android.widget.Button[@text='COMEÇAR']").click
+        find_element(xpath: "//android.widget.Button[@text='COMEÇAR']").click
     end
 
     def navigate_to(target)

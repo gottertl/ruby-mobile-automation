@@ -5,7 +5,7 @@ Before do
     @nav = Navigation.new
     @login = LoginScreen.new
 
-    @nav.start
+    find_element(xpath: "//android.widget.Button[@text='COMEÇAR']").click
 end
 
 After do |scenario|
